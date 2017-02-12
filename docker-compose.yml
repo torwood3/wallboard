@@ -1,0 +1,7 @@
+server:
+    build: .
+    environment:
+      - PORT=8081
+    ports:
+      - "7002:8081"
+    restart: always

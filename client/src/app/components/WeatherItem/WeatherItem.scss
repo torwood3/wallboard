@@ -1,0 +1,88 @@
+// Colours
+$very-warm: #FF8500;
+$warm: #ffc600;
+$normal: #94AF10;
+$cold: #06799F;
+$very-cold: #233884;
+
+// DOM Elements
+.weather-day {
+  color: white;
+  font-family: league-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 5% 10%;
+  margin: 0 1px;
+
+  &.very-warm { background-color: $very-warm; }
+  &.warm { background-color: $warm; }
+  &.normal { background-color: $normal; }
+  &.cold { background-color: $cold; }
+  &.very-cold { background-color: $very-cold; }
+}
+
+.day {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.weather-icon{
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+
+  .wi {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 6em;
+  }
+}
+
+.weather-details {
+  overflow: hidden;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .temp {
+    font-size: 5em;
+    float: left;
+    width: 55%;
+
+    .temp-number, .wi {
+      vertical-align: top;
+    }
+
+    .wi {
+      font-size: 1em;
+    }
+  }
+
+  .humidity, .wind {
+    font-size: 1.5em;
+
+    .wi {
+      vertical-align: top;
+      margin-right: 4px;
+    }
+  }
+
+  .humidity {
+    margin-bottom: 20px;
+  }
+
+  .wind {
+    .wi {
+      font-size: 0.82em;
+    }
+    .vel {
+      font-size: 0.6em;
+    }
+  }
+}
