@@ -1,7 +1,7 @@
-server:
+wallboard:
     build: .
     environment:
-      - PORT=8081
+      - PORT=8080
     ports:
-      - "7002:8081"
+      - "7000:8080"
     restart: always
